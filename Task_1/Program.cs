@@ -5,30 +5,18 @@ Console.WriteLine("Введите второе число");
 double num2 =double.Parse(Console.ReadLine());
 double max = 0, min = 0;
  if (num1>num2)
-{
+ {
     max=num1;
-    Console.Write("Максисальное число = ");
-    Console.WriteLine(max);
-}
-if (num2>num1)
-{
-    max=num2;
-    Console.Write("Максисальное число = ");
-    Console.WriteLine(max);
-}
- if (num1<num2)
-{
-    min=num1;
-    Console.Write("Минимальное число = ");
-    Console.WriteLine(min);
-}
-if (num2<num1)
-{
     min=num2;
-    Console.Write("Минимальное число = ");
-    Console.WriteLine(min);
-}
-if (num1==num2)
-{
+    Console.WriteLine($"Максимальное число {max}, Минимальное число {min}");
+ }
+ else
+ {
+    max=num2;
+    min=num1;
+    Console.WriteLine($"Максимальное число {max}, Минимальное число {min}");
+ }
+ if (num1==num2)
+ {
     Console.WriteLine("Числа равны");
-}
+ }
