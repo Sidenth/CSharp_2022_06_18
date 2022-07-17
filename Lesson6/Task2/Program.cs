@@ -31,8 +31,8 @@ int Prompt(string msg)
     int num = int.Parse(Console.ReadLine());
     return num;
 }
-int k1 = Prompt("Введите коэффициент k1");
-int k2 = Prompt("Введите коэффициент k2");
-int b1 = Prompt("Введите коэффициент b1");
-int b2 = Prompt("Введите коэффициент b2");
+int k1 = Prompt("Введите коэффициент k1 ");
+int k2 = Prompt("Введите коэффициент k2 ");
+int b1 = Prompt("Введите коэффициент b1 ");
+int b2 = Prompt("Введите коэффициент b2 ");
 CrossPoint(k1, k2, b1, b2);
