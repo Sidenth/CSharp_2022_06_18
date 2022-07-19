@@ -34,7 +34,7 @@ int[,] MultyMatrix(int[,] array, int[,] array2)
     int[,] newArray = new int[array.GetLength(0), array2.GetLength(1)];
     int i1 = 0;
     int j1 = 0;
-    int newI = 0;
+    int nI = 0;
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -46,12 +46,12 @@ int[,] MultyMatrix(int[,] array, int[,] array2)
                 i1++;
             }
             i1 = 0;
-            newArray[newI, j1] = result;
+            newArray[nI, j1] = result;
             j1++;
             result = 0;
         }
         j1 = 0;
-        newI++;
+        nI++;
     }
     return newArray;
 }
